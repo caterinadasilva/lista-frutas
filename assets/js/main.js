@@ -12,8 +12,8 @@ function Producto(compra, cantidad) {
 //Método para imprimir un producto en html
 Producto.prototype.toHTML = function () {
   var html = '';
-  html += this.compra.toUpperCase() + '<br>';
-  html += 'Cantidad: ' + this.cantidad + '<br>';
+  html += '<h5>' + this.compra.toUpperCase() + '</h5>';
+  html += '<p>Cantidad: <b>' + this.cantidad + '</b></p>';
   html += '<br><br>';
   return html;
 }

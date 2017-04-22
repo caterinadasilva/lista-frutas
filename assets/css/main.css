@@ -33,6 +33,7 @@ body {
 }
 ol, ul {
   list-style: none;
+  font-family: "PT Sans", sans-serif;
 }
 blockquote, q {
   quotes: none;
@@ -59,47 +60,82 @@ html {
   background-size: cover;
 }
 body {
-  color: Grey;
+  color: white;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'PT Serif', serif;
   font-weight: 700;
   color: white;
-  text-shadow: 2px 2px 7px rgb(0, 0, 0);
+  text-shadow: 2px 2px 7px rgb(0, 0, 0);  
+  text-align: center;
 }
 h1 {
-  text-align: center;
   font-size: 5em;
 }
 h3 {
-  text-align: center;
   font-size: 3em;
+}
+h4 {
+  font-size: 2em;
+  margin-top: 10px;
+}
+h5 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+p {
+  font-size: 1.2em;
 }
 .container {
     max-width: 1100px;
     margin: 3em auto;
     width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.mitad {
+    width: 42%;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 2em;
+    margin: 4em 1% 0;
+    background: rgba(0,0,0,.5);
+    min-height: 220px;
+}
+.mitad p {
+  padding: 2em 0;
 }
 header {
     padding: 5% 0 0;
+    overflow: hidden;
 }
-header p {
+header p, #catalogo ol {
     color: white;
-    font-size: 200%;
-    text-align: center;
-    padding: 3em;
-    margin: 2em 3em 0;
-    background: rgba(0,0,0,.5);
+    font-size: 150%;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+#catalogo ol{
+  padding: 1em 0;
+}
+#cuerpo {
+    overflow: hidden;
 }
 #cuerpo h3 {
-  margin: 2em 0;
+  margin: 0 0 1em;
 }
 button {
   width: 250px;
   height: 50px;
-  background-color: DarkSalmon ;
+  background-color: #D3414D;
   border: none; 
   font-size: 1em;
   color: white;
   cursor: pointer;
+}
+button:hover, button:active, button:focus {
+  background-color: #9E3641;
+  : ;
 }
